@@ -6,7 +6,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@ap
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:5000/graphql'
+  uri: 'https://sheltered-spire-47553.herokuapp.com/'
 })
 
 const authLink = setContext(() => {
